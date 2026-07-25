@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* 1. Define the font family */
+@font-face {
+  font-family: 'Mantinia';
+  src: url('../Mantinia Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Register with Tailwind (v4) */
+@theme {
+  --font-mantinia: 'Mantinia', serif;
+}
