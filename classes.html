@@ -5,24 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>CLASS</title>
 </head>
 
 <body>
-    <nav class="w-full bg-black text-amber-200 flex justify-between items-center px-8 py-3 z-10">
+    <audio src="./Audios/ClassPageAudio.mp3" autoplay loop"></audio>
+    <header>
+        <nav class="w-full bg-black text-amber-200 flex justify-between items-center px-8 py-3 z-10">
         <a href="index.html" class="font-mantinia hover:text-amber-400">HOME</a>
         <a href="gmetrai.html" class="font-mantinia hover:text-amber-400">GAMEPLAY</a>
-        <a href="index.html" class="font-mantinia hover:text-amber-400">LORE</a>
+        <a href="boss.html" class="font-mantinia hover:text-amber-400">BOSSES</a>
         <a href="classes.html" class="font-mantinia hover:text-amber-400">CLASSES</a>
     </nav>
+    </header>
     <main>
-        <header>
-            <div class="w-full h-full">
-                <img src="./images&GIFS/Class/image.PNG" alt="Error Loading Image" class="w-full h-40 object-cover">
-            </div>
-        </header>
+        <div class="w-full h-[50vh] overflow-hidden relative">
+            <video autoplay loop muted class="w-full h-[50vh] object-cover ">
+                <source src="./images&GIFS/Class/Elden.mp4" type="video/mp4">
+            </video>
+        </div>
         <section class="flex flex-col justify-center items-center">
             <img class="fixed inset-0 -z-10 w-full h-full" src="./images&GIFS/Class/back.jpeg" alt="ERROR">
+            <p class="text-center gap-10 w-full text-5xl font-mantinia text-stone-200">CHOOSE YOUR STARTING CLASS FROM 9
+                VARIED YET POWERFUL CLASSES AND BECOME THE ELDEN LORD!</p><br>    
             <p class="text-center gap-10 w-3/5 h-2/5 text-2xl font-mantinia text-stone-200">Choose your origin and carve
                 your path through the
                 Lands Between. From the battle-hardened Vagabond to the bare and unbroken Wretch, each of the ten
@@ -33,19 +39,20 @@
                 The legend you forge from then on is entirely your own</p>
             <div class="flex flex-col items-center justify-center">
                 <div class="flex justify-center">
-                <img src="./images&GIFS/Class/HeroClass.png" usemap="#heroMap">
-                <img src="./images&GIFS/Class/banditClass.png" usemap="#banditMap">
-                <img src="./images&GIFS/Class/astroClass.png" usemap="#astroMap">
-                <img src="./images&GIFS/Class/samuraiClass.png" usemap="#samuraiMap">
+                    <img src="./images&GIFS/Class/HeroClass.png" class="wow animate__animated animate__rotateInDownLeft"
+                        usemap="#heroMap">
+                    <img src="./images&GIFS/Class/banditClass.png" class="wow animate__animated animate__flipInX" usemap="#banditMap">
+                    <img src="./images&GIFS/Class/astroClass.png" class="wow animate__animated animate__flipInX" usemap="#astroMap">
+                    <img src="./images&GIFS/Class/samuraiClass.png" class="wow animate__animated animate__rotateInDownLeft" usemap="#samuraiMap">
                 </div>
                 <div class="flex justify-center">
-                    
-                <img src="./images&GIFS/Class/prisonerClass.png" usemap="#prisonMap">
-                <img src="./images&GIFS/Class/vagabondClass.png" usemap="#vagaMap">
-                <img src="./images&GIFS/Class/prophetClass.png" usemap="#prophMap">
-                <img src="./images&GIFS/Class/warriorClass.png" usemap="#warMap">
+
+                    <img src="./images&GIFS/Class/prisonerClass.png" class="wow animate__animated animate__rotateInDownLeft" usemap="#prisonMap">
+                    <img src="./images&GIFS/Class/vagabondClass.png" class="wow animate__animated animate__flipInX" usemap="#vagaMap">
+                    <img src="./images&GIFS/Class/prophetClass.png" class="wow animate__animated animate__flipInX" usemap="#prophMap">
+                    <img src="./images&GIFS/Class/warriorClass.png" class="wow animate__animated animate__rotateInDownLeft" usemap="#warMap">
                 </div>
-                <img src="./images&GIFS/Class/confessorClass.png" usemap="#confessMap">
+                <img src="./images&GIFS/Class/confessorClass.png" class="wow animate__animated animate__flipInX" usemap="#confessMap">
 
             </div>
 
@@ -100,6 +107,10 @@
             shape="rect">
     </map>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>
 
