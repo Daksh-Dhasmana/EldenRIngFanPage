@@ -11,7 +11,6 @@ Welcome to the **Elden Ring Fan Page**! This repository hosts a web project dedi
 ## 🛠️ Tech Stack
 *(Note: Update this section based on the actual technologies used in your project)*
 * **Frontend:** HTML5, CSS3, JavaScript 
-* **Framework/Libraries:** React.js / Vue.js *(Remove if not applicable)*
 * **Styling:** Tailwind CSS / Custom CSS
 * **Deployment:** GitHub Pages / Netlify / Vercel
 
@@ -22,7 +21,6 @@ To get a local copy of this fan page up and running, follow these simple steps:
 ### Prerequisites
 * A modern web browser.
 * [Git](https://git-scm.com/) installed on your machine.
-* *(If using Node.js)* [Node.js and npm](https://nodejs.org/) installed.
 
 ### Installation
 
